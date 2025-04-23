@@ -4,248 +4,260 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D-VAST: ICCV 2025 Workshop</title>
-    
-    <!-- CSS Frameworks -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
     <style>
         /* 全局样式 */
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
             line-height: 1.6;
             color: #333;
+            padding-top: 80px;
         }
 
         /* 导航栏防遮挡 */
         section::before {
             display: block;
             content: " ";
-            margin-top: -70px;
-            height: 70px;
+            margin-top: -80px;
+            height: 80px;
             visibility: hidden;
         }
 
-        /* 导航栏样式 */
-        .navbar {
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            background: rgba(255,255,255,0.97);
+        /* 专业表格样式 */
+        .workshop-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 25px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
 
-        .navbar-brand {
-            font-weight: bold;
-            color: var(--primary-color) !important;
+        .workshop-table th {
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            text-align: left;
         }
 
-        /* 内容区块 */
-        .section-block {
-            padding: 50px 0;
-            border-bottom: 1px solid #eee;
-        }
-
-        h2.section-title {
-            color: var(--primary-color);
-            border-left: 4px solid var(--secondary-color);
-            padding-left: 15px;
-            margin-bottom: 30px;
+        .workshop-table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
         }
 
         /* 人员卡片 */
-        .person-card {
-            text-align: center;
+        .profile-card {
             margin: 20px 0;
             padding: 15px;
-            transition: transform 0.3s;
+            border-radius: 8px;
+            background: #f8f9fa;
         }
 
-        .person-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .people-pic {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
+        .profile-img {
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
-            margin-bottom: 15px;
-            border: 3px solid var(--secondary-color);
+            object-fit: cover;
+            margin-right: 20px;
         }
 
-        /* 表格样式 */
-        .data-table {
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            margin: 25px 0;
-        }
-
-        .data-table th {
-            background: var(--primary-color);
-            color: white;
-        }
-
-        /* 响应式调整 */
-        @media (max-width: 768px) {
-            .navbar-collapse {
-                background: white;
-                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            }
-            
-            .person-card {
-                margin: 10px 0;
-            }
+        /* 章节标题 */
+        .section-title {
+            color: #2c3e50;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+            margin: 40px 0 30px;
         }
     </style>
 </head>
-
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">3D-VAST 2025</a>
+
+<!-- 导航栏 -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">3D-VAST 2025</a>
+        </div>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="nav navbar-nav">
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#topic">Topic</a></li>
+                <li><a href="#organizers">Organizers</a></li>
+                <li><a href="#format">Format</a></li>
+                <li><a href="#impacts">Impacts</a></li>
+                <li><a href="#related">Related Workshops</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <!-- Summary Section -->
+    <section id="summary">
+        <h2 class="section-title">1. Summary</h2>
+        <table class="workshop-table">
+            <tr>
+                <th>Workshop Title</th>
+                <td>From street to space: 3D Vision AcrossS aI<u>T</u>itudes</td>
+            </tr>
+            <tr>
+                <th>Acronym</th>
+                <td>3D-VAST</td>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <td>September 29, 2025 (Half-day)</td>
+            </tr>
+            <tr>
+                <th>Keywords</th>
+                <td>Cross-altitude data fusion, aerial images, 3D scene modeling</td>
+            </tr>
+            <tr>
+                <th>Contact</th>
+                <td>Yujiao Shi &lt;shiyj2@shanghaitech.edu.cn&gt;</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Topic Section -->
+    <section id="topic">
+        <h2 class="section-title">2. Topic</h2>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h4>Core Challenges</h4>
+                <ul>
+                    <li>Sparse and incomplete views</li>
+                    <li>Visual ambiguities across altitudes</li>
+                    <li>Spatio-temporal inconsistencies</li>
+                    <li>Dynamic scene changes</li>
+                </ul>
+
+                <h4>Research Directions</h4>
+                <ol>
+                    <li>Cross-altitude feature matching</li>
+                    <li>View synthesis from heterogeneous data</li>
+                    <li>Sparse-view 3D reconstruction</li>
+                    <li>Generative view completion</li>
+                </ol>
             </div>
-            
-            <div class="collapse navbar-collapse" id="mainNav">
-                <ul class="nav navbar-nav">
-                    <li><a href="#introduction"><i class="fa fa-home"></i> Introduction</a></li>
-                    <li><a href="#topics"><i class="fa fa-bullseye"></i> Topics</a></li>
-                    <li><a href="#schedule"><i class="fa fa-calendar"></i> Schedule</a></li>
-                    <li><a href="#speakers"><i class="fa fa-microphone"></i> Speakers</a></li>
-                    <li><a href="#organizers"><i class="fa fa-users"></i> Organizers</a></li>
-                    <li><a href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
+        </div>
+    </section>
+
+    <!-- Organizers Section -->
+    <section id="organizers">
+        <h2 class="section-title">3. Organizers & Speakers</h2>
+        
+        <h4>Organizing Committee</h4>
+        <div class="profile-card">
+            <div class="media">
+                <div class="media-left">
+                    <img src="organizers/yujiao_shi.jpg" class="profile-img">
+                </div>
+                <div class="media-body">
+                    <h4>Yujiao Shi</h4>
+                    <p>Assistant Professor, ShanghaiTech University</p>
+                    <p>Expertise: Aerial image-based localization</p>
+                </div>
+            </div>
+        </div>
+        <!-- 添加其他组织者 -->
+
+        <h4 style="margin-top:40px;">Invited Speakers</h4>
+        <div class="profile-card">
+            <div class="media">
+                <div class="media-left">
+                    <img src="speakers/torsten.jpg" class="profile-img">
+                </div>
+                <div class="media-body">
+                    <h4>Torsten Sattler</h4>
+                    <p>Senior Researcher, CTU Prague</p>
+                    <p>Expertise: Robust 3D reconstruction</p>
+                </div>
+            </div>
+        </div>
+        <!-- 添加其他演讲者 -->
+    </section>
+
+    <!-- Format Section -->
+    <section id="format">
+        <h2 class="section-title">4. Format & Logistics</h2>
+        
+        <h4>Schedule</h4>
+        <table class="workshop-table">
+            <tr>
+                <th>Time</th>
+                <th>Session</th>
+            </tr>
+            <tr>
+                <td>08:30-08:35</td>
+                <td>Opening Remarks</td>
+            </tr>
+            <tr>
+                <td>08:35-09:05</td>
+                <td>Keynote Speech 1</td>
+            </tr>
+            <!-- 完整日程 -->
+        </table>
+
+        <h4>Paper Submission</h4>
+        <ul>
+            <li>Submission Deadline: May 20, 2024</li>
+            <li>Notification: June 20, 2024</li>
+            <li>Camera Ready: July 20, 2024</li>
+        </ul>
+    </section>
+
+    <!-- Impacts Section -->
+    <section id="impacts">
+        <h2 class="section-title">5. Broader Impacts</h2>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h4>Applications</h4>
+                <ul>
+                    <li>Urban planning and smart cities</li>
+                    <li>Autonomous navigation systems</li>
+                    <li>Digital twin development</li>
+                </ul>
+
+                <h4>Ethical Considerations</h4>
+                <ul>
+                    <li>Privacy protection in multi-altitude data</li>
+                    <li>Algorithmic bias mitigation</li>
+                    <li>Surveillance ethics</li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </section>
 
-    <!-- 页面内容 -->
-    <div class="container" style="margin-top: 90px;">
-        
-        <!-- 简介 -->
-        <section id="introduction" class="section-block">
-            <h2 class="section-title">Introduction</h2>
-            <p>As large-scale 3D scene modeling becomes increasingly important for applications such as urban planning, robotics, autonomous navigation, and virtual simulations, the need for diverse, high-quality visual data is greater than ever. Combining images from multiple altitudes offers a promising solution to overcome traditional limitations, enabling richer, more complete 3D reconstructions.</p>
-        </section>
+    <!-- Related Workshops Section -->
+    <section id="related">
+        <h2 class="section-title">6. Related Workshops</h2>
+        <table class="workshop-table">
+            <tr>
+                <th>Workshop</th>
+                <th>Comparison</th>
+            </tr>
+            <tr>
+                <td>EarthVision (CVPR)</td>
+                <td>Focuses on satellite imagery only</td>
+            </tr>
+            <tr>
+                <td>ECCV 2024 Workshop</td>
+                <td>Emphasizes large-scale generation</td>
+            </tr>
+        </table>
+    </section>
 
-        <!-- 主题 -->
-        <section id="topics" class="section-block">
-            <h2 class="section-title">Core Topics</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Technical Challenges</h3>
-                        </div>
-                        <div class="panel-body">
-                            <ul>
-                                <li>Sparse and incomplete views</li>
-                                <li>Visual ambiguities across altitudes</li>
-                                <li>Spatio-temporal inconsistencies</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Research Topics</h3>
-                        </div>
-                        <div class="panel-body">
-                            <ol>
-                                <li>Cross-altitude feature matching</li>
-                                <li>Neural scene representations</li>
-                                <li>Urban digital twins</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <footer class="text-center" style="margin: 50px 0;">
+        <p>© 2025 3D-VAST Workshop Committee</p>
+        <p>Contact: <a href="mailto:shiyj2@shanghaitech.edu.cn">shiyj2@shanghaitech.edu.cn</a></p>
+    </footer>
+</div>
 
-        <!-- 日程 -->
-        <section id="schedule" class="section-block">
-            <h2 class="section-title">Schedule</h2>
-            <table class="table data-table">
-                <thead>
-                    <tr>
-                        <th>Time</th>
-                        <th>Session</th>
-                        <th>Speaker</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>08:30 - 08:35</td>
-                        <td>Opening Comments</td>
-                        <td>Organizers</td>
-                    </tr>
-                    <tr>
-                        <td>08:35 - 09:05</td>
-                        <td>Keynote Speech</td>
-                        <td>Angela Dai</td>
-                    </tr>
-                    <!-- 添加完整日程 -->
-                </tbody>
-            </table>
-        </section>
-
-        <!-- 演讲者 -->
-        <section id="speakers" class="section-block">
-            <h2 class="section-title">Invited Speakers</h2>
-            <div class="row">
-                <div class="col-md-4 person-card">
-                    <img src="speakers/torsten.jpg" class="people-pic">
-                    <h4>Torsten Sattler</h4>
-                    <p>CTU Prague</p>
-                    <p class="text-muted">3D Reconstruction Expert</p>
-                </div>
-                <!-- 添加其他演讲者 -->
-            </div>
-        </section>
-
-        <!-- 组织者 -->
-        <section id="organizers" class="section-block">
-            <h2 class="section-title">Organizers</h2>
-            <div class="row">
-                <div class="col-md-3 person-card">
-                    <img src="organizers/yujiao_shi.jpg" class="people-pic">
-                    <h4>Yujiao Shi</h4>
-                    <p>ShanghaiTech University</p>
-                </div>
-                <!-- 添加其他组织者 -->
-            </div>
-        </section>
-
-        <!-- 联系方式 -->
-        <section id="contact" class="section-block">
-            <h2 class="section-title">Contact</h2>
-            <address>
-                <strong>Workshop Chair:</strong><br>
-                Yujiao Shi<br>
-                <a href="mailto:shiyj2@shanghaitech.edu.cn">shiyj2@shanghaitech.edu.cn</a>
-            </address>
-        </section>
-
-        <footer class="text-center" style="padding: 30px 0;">
-            <p>© 2025 3D-VAST Workshop Committee. All rights reserved.</p>
-        </footer>
-    </div>
-
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
