@@ -429,11 +429,9 @@
         <!-- Nathan Jacobs -->
         <div class="profile-card">
             <div class="media">
-                <!--
                 <div class="media-left">
                     <img src="pic/speakers/nathan.jpg"  class="profile-img">
                 </div>
-                -->
                 <div class="media-body">
                     <h4>Nathan Jacobs</h4>
                     <p>Professor, Washington University in St. Louis</p>
@@ -446,11 +444,9 @@
         <!-- Jingyi Yu -->
         <div class="profile-card">
             <div class="media">
-                <!--
                 <div class="media-left">
                     <img src="pic/speakers/jingyi yu.jpg"  class="profile-img">
                 </div>
-                -->
                 <div class="media-body">
                     <h4>Jingyi Yu</h4>
                     <p>Chair Professor, ShanghaiTech University</p>
@@ -464,121 +460,146 @@
     </section>
 
        <!-- Schedule Section -->
-    <section id="schedule">
-        <h2 class="section-title">Workshop Schedule</h2>
+       <section id="schedule" style="margin: 40px 0;">
+        <h2 class="section-title text-center">Workshop Schedule</h2>
     
-        <div class="schedule-table">
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th style="width: 25%">Time</th>
-                        <th>Session</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Morning Sessions -->
-                    <tr class="active">
-                        <td colspan="2"><strong>Morning Sessions</strong></td>
-                    </tr>
-                
-                    <tr>
-                        <td>08:30 - 08:35</td>
-                        <td>
-                            <h4>Workshop Kickoff</h4>
-                            <p>Opening comments by organizers</p>
-                        </td>
-                    </tr>
+        <div class="schedule-container">
+            <!-- 早晨时段 -->
+            <div class="time-slot morning">
+                <div class="time-block">
+                    <div class="time">08:30 - 08:35</div>
+                    <div class="event">
+                        <h4>Workshop Kickoff</h4>
+                        <p>Opening Comments</p>
+                    </div>
+                </div>
+                <div class="time-block">
+                    <div class="time">08:35 - 09:05</div>
+                    <div class="event">
+                        <h4>Keynote Speech I</h4>
+                        <p>Speaker TBA</p>
+                    </div>
+                </div>
+                <div class="time-block">
+                    <div class="time">09:05 - 09:35</div>
+                    <div class="event">
+                        <h4>Keynote Speech II</h4>
+                        <p>Speaker TBA</p>
+                    </div>
+                </div>
+                <div class="time-block">
+                    <div class="time">09:35 - 10:05</div>
+                    <div class="event">
+                        <h4>Keynote Speech III</h4>
+                        <p>Speaker TBA</p>
+                    </div>
+                </div>
+            </div>
 
-                    <tr>
-                        <td>08:35 - 09:05</td>
-                        <td>
-                            <h4>Keynote Speech I</h4>
-                            <p class="text-muted">Speaker to be announced</p>
-                        </td>
-                    </tr>
+            <!-- 茶歇 -->
+            <div class="time-slot break">
+                <div class="time-block full-width">
+                    <div class="time">10:05 - 11:00</div>
+                    <div class="event">
+                        <h4>Coffee Break & Poster Session</h4>
+                        <p>Interactive Discussions</p>
+                    </div>
+                </div>
+            </div>
 
-                    <tr>
-                        <td>09:05 - 09:35</td>
-                        <td>
-                            <h4>Keynote Speech II</h4>
-                            <p class="text-muted">Speaker to be announced</p>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>09:35 - 10:05</td>
-                        <td>
-                            <h4>Keynote Speech III</h4>
-                            <p class="text-muted">Speaker to be announced</p>
-                        </td>
-                    </tr>
-
-                    <!-- Break -->
-                    <tr class="info">
-                        <td>10:05 - 11:00</td>
-                        <td>
-                            <h4>Coffee Break & Poster Session</h4>
-                            <p>Interactive discussions with presenters</p>
-                        </td>
-                    </tr>
-
-                    <!-- Afternoon Sessions -->
-                    <tr class="active">
-                        <td colspan="2"><strong>Afternoon Sessions</strong></td>
-                    </tr>
-
-                    <tr>
-                        <td>11:00 - 11:30</td>
-                        <td>
-                            <h4>Keynote Speech IV</h4>
-                            <p class="text-muted">Speaker to be announced</p>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>11:30 - 12:00</td>
-                        <td>
-                            <h4>Keynote Speech V</h4>
-                            <p class="text-muted">Speaker to be announced</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <!-- 下午时段 -->
+            <div class="time-slot afternoon">
+                <div class="time-block">
+                    <div class="time">11:00 - 11:30</div>
+                    <div class="event">
+                        <h4>Keynote Speech IV</h4>
+                        <p>Speaker TBA</p>
+                    </div>
+                </div>
+                <div class="time-block">
+                    <div class="time">11:30 - 12:00</div>
+                    <div class="event">
+                        <h4>Keynote Speech V</h4>
+                        <p>Speaker TBA</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <style>
-            .schedule-table {
-                margin: 30px 0;
-                box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            .schedule-container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
             }
-        
-            .schedule-table th {
-                background: #2c3e50;
-                color: white;
-                font-size: 16px;
+
+            .time-slot {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+                margin-bottom: 15px;
             }
-        
-            .schedule-table tr.active td {
-                background-color: #f8f9fa;
-                font-weight: bold;
+
+            .time-block {
+                border: 1px solid #e0e0e0;
+                border-radius: 8px;
+                padding: 15px;
+                background: white;
+                transition: transform 0.2s;
+            }
+
+            .time-block:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            }
+
+            .time {
+                color: #3498db;
+                font-weight: 600;
+                margin-bottom: 8px;
+                font-size: 0.9em;
+            }
+
+            .event h4 {
+                color: #2c3e50;
+                margin: 0 0 5px 0;
+                font-size: 1.1em;
+            }
+
+            .event p {
+                color: #7f8c8d;
+                margin: 0;
+                font-size: 0.9em;
+            }
+
+            /* 茶歇特殊样式 */
+            .break .time-block {
+                grid-column: 1 / -1;
+                background: #f8f9fa;
+                border-color: #3498db;
+            }
+
+            .break h4 {
                 color: #3498db;
             }
-        
-            .schedule-table tr.info td {
-                background-color: #e8f4fd;
-            }
-        
-            .schedule-table h4 {
-                color: #34495e;
-                margin-top: 0;
-            }
-        
-            .schedule-table .text-muted {
-                font-size: 0.9em;
+
+            /* 响应式设计 */
+            @media (max-width: 768px) {
+                .time-slot {
+                    grid-template-columns: 1fr;
+                }
+            
+                .time-block {
+                    padding: 12px;
+                }
+            
+                .event h4 {
+                    font-size: 1em;
+                }
             }
         </style>
     </section>
-
+    
     <!-- Impacts Section -->
     <section id="impacts">
         <h2 class="section-title">5. Broader Impacts</h2>
