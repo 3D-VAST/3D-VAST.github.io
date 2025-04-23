@@ -189,75 +189,127 @@
     </section>
 	
 <!-- Topic Section -->
-<section id="topic">
-    <h2 class="section-title">2. Topic</h2>
-    <p class="lead">The 3D-VAST workshop focuses on advancing 3D scene modeling through cross-altitude data fusion.</p>
+<section id="topic" class="py-5">
+    <h2 class="section-title mb-4">2. Topic</h2>
+    <p class="lead fw-bold">Bridging Multi-Altitude Vision for Scalable 3D Scene Understanding</p>
     
-    <div class="row">
-        <div class="col-md-8">
-            <div class="card">
+    <div class="row g-4">
+        <div class="col-lg-8">
+            <div class="card shadow-sm">
                 <div class="card-body">
-                    <h4 class="card-title">Workshop Overview</h4>
-                    <p class="card-text">As 3D modeling grows crucial for urban planning, robotics, and simulations, the demand for diverse, high-quality visual data rises. However, obtaining dense ground-level imagery is often impractical due to access limits, cost, and environmental factors.</p>
-                    <p class="card-text">Aerial and satellite imagery provide broad coverage but lack fine details. Combining images from ground cameras, aerial drones, and satellites offers a promising solution for richer 3D reconstructions.</p>
-                    <p class="card-text">How can we achieve accurate 3D modeling from different altitudes under varying conditions? While each altitude has advantages, cross-altitude data fusion faces challenges like sparse views, visual ambiguities, and image quality variations.</p>
-                    <p class="card-text">Traditional 3D reconstruction methods struggle with such diverse data. Recent advances in feature alignment and neural scene representations offer solutions, but challenges remain.</p>
-                    <p class="card-text">The workshop invites researchers to explore techniques in scene modeling, understanding, rendering, and synthesis across altitudes, bridging ground-level and aerial observations.</p>
+                    <h4 class="card-title mb-3">Workshop Motivation</h4>
+                    <p class="card-text">While modern 3D modeling plays a pivotal role in urban planning, autonomous systems, and digital twin creation, current approaches face fundamental limitations:</p>
+                    
+                    <div class="alert alert-light bg-light border">
+                        <ul class="mb-0">
+                            <li>Ground-level capture suffers from <strong>spatial fragmentation</strong> and <strong>environmental constraints</strong></li>
+                            <li>Aerial/satellite systems offer <strong>broad coverage</strong> but lack <strong>actionable granularity</strong></li>
+                            <li>Existing fusion methods struggle with <strong>multi-scale alignment</strong> and <strong>temporal variance</strong></li>
+                        </ul>
+                    </div>
+
+                    <p class="card-text">This workshop addresses the critical need for unified frameworks that reconcile <strong>ground-level fidelity</strong> with <strong>aerial context</strong>, enabling holistic scene understanding across spatial scales. Key technical hurdles include resolving geometric discontinuities between perspectives and overcoming temporal misalignment in dynamic environments.</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card">
+
+        <div class="col-lg-4">
+            <div class="card shadow-sm h-100">
                 <div class="card-body">
-                    <h4 class="card-title">Key Challenges</h4>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Sparse and incomplete views</li>
-                        <li class="list-group-item">Visual ambiguities</li>
-                        <li class="list-group-item">Spatio-temporal inconsistencies</li>
-                        <li class="list-group-item">Image quality variations</li>
-                        <li class="list-group-item">Dynamic scene changes</li>
-                        <li class="list-group-item">Environmental topology changes</li>
-                    </ul>
+                    <h4 class="card-title mb-3">Core Technical Challenges</h4>
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item d-flex align-items-center">
+                            <i class="bi bi-camera-fill me-3 text-primary"></i>
+                            <span>Multi-altitude feature correspondence</span>
+                        </div>
+                        <div class="list-group-item d-flex align-items-center">
+                            <i class="bi bi-stack me-3 text-primary"></i>
+                            <span>Neural field integration across scales</span>
+                        </div>
+                        <div class="list-group-item d-flex align-items-center">
+                            <i class="bi bi-clock-history me-3 text-primary"></i>
+                            <span>Temporal synchronization of dynamic scenes</span>
+                        </div>
+                        <div class="list-group-item d-flex align-items-center">
+                            <i class="bi bi-gpu-card me-3 text-primary"></i>
+                            <span>Cross-modal quality normalization</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    <h4 class="mt-4">Main Topics</h4>
-    <div class="card">
-        <div class="card-body">
-            <ol class="workshop-table">
-                <li>Cross-altitude feature matching and registration</li>
-                <li>View synthesis from sparse and heterogeneous data sources</li>
-                <li>Sparse-view 3D reconstruction (with known or unknown camera poses)</li>
-                <li>Generative approaches for view completion and prediction</li>
-                <li>Datasets and benchmarks for evaluating cross-altitude vision systems</li>
-                <li>Real-world applications in urban planning, simulation, and digital twins</li>
-            </ol>
+
+    <div class="row mt-4 g-4">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title mb-3">Technical Scope</h4>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item d-flex align-items-start">
+                            <span class="me-auto">Cross-altitude feature matching & neural registration</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-start">
+                            <span class="me-auto">Multi-source view synthesis with uncertainty modeling</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-start">
+                            <span class="me-auto">Pose-aware & blind sparse reconstruction</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-start">
+                            <span class="me-auto">Differentiable rendering for cross-altitude completion</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-start">
+                            <span class="me-auto">Benchmarking cross-altitude perception systems</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
         </div>
-    </div>
-    
-    <h4 class="mt-4">Relevance to the Computer Vision Community</h4>
-    <div class="card">
-        <div class="card-body">
-            <p class="card-text">This workshop tackles challenges in 3D modeling, data fusion, and multi-view geometry across altitudes. It focuses on integrating ground, aerial, and satellite imagery to enhance feature matching and neural scene representations, addressing issues like spatial inconsistencies and dynamic changes.</p>
-            <p class="card-text">These topics are vital for developing robust computer vision algorithms that handle diverse data for accurate 3D reconstructions.</p>
-        </div>
-    </div>
-    
-    <h4 class="mt-4">Potential ICCV 2025 Attendees</h4>
-    <div class="card">
-        <div class="card-body">
-            <p class="card-text">The workshop will attract:</p>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Researchers in 3D reconstruction and multi-view geometry</li>
-                <li class="list-group-item">Experts in robotics, autonomous navigation, and urban planning</li>
-                <li class="list-group-item">Machine learning practitioners exploring neural scene representations and generative 3D reconstruction</li>
-            </ul>
+
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h4 class="card-title mb-3">Impact & Applications</h4>
+                    <div class="row row-cols-2 g-3">
+                        <div class="col">
+                            <div class="card bg-light h-100">
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-2 text-muted">Urban Intelligence</h6>
+                                    <p class="card-text small">Dynamic 3D city models for infrastructure monitoring</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-light h-100">
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-2 text-muted">Autonomous Systems</h6>
+                                    <p class="card-text small">Multi-scale navigation graphs for robotics</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-light h-100">
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-2 text-muted">Virtualization</h6>
+                                    <p class="card-text small">Physics-aware digital twin simulation</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-light h-100">
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-2 text-muted">Geospatial AI</h6>
+                                    <p class="card-text small">Temporal 3D mapping for climate analysis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
-
+	
 <section id="organizers">
     <h2 class="section-title">3. Organizers & Speakers</h2>
     
