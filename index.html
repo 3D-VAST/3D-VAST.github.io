@@ -196,8 +196,7 @@
         </tr>
     </table>
 </section>
-	
-<!-- Topic Section -->
+	<!-- Topic Section -->
 <section id="topic">
     <h2>2. Topic</h2>
     
@@ -222,21 +221,6 @@
                 
                 <p>Traditional 3D reconstruction methods, optimized for dense and structured inputs, struggle with such heterogeneous multi-altitude data. Advances in multi-scale feature alignment, neural scene representations, and robust cross-view fusion offer promising solutions, but key challenges remain.</p>
             </div>
-            
-            <div class="side-content">
-                <div class="card">
-                    <div class="card-body">
-                        <h3>Key Challenges</h3>
-                        <ul class="challenge-list">
-                            <li>Data heterogeneity across altitudes</li>
-                            <li>Scale disparity in feature extraction</li>
-                            <li>Temporal synchronization of multi-source data</li>
-                            <li>Quality normalization across imaging modalities</li>
-                            <li>Dynamic environment adaptation</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     
@@ -245,7 +229,7 @@
         <p>3D-VAST invites researchers and practitioners to explore novel techniques in scene modeling, understanding, rendering, and synthesis across altitudes, bridging the gap between ground-level perspectives and large-scale aerial/satellite observations.</p>
         
         <div class="topics-section">
-            <h4>Technical Topics</h4>
+            <h4>Covered Topics</h4>
             <ol class="topics-list">
                 <li>Cross-altitude feature matching and registration</li>
                 <li>View synthesis from sparse and heterogeneous data sources</li>
@@ -275,77 +259,92 @@
 
 <style>
 section {
-    padding: 30px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
 }
 
 h2 {
     font-size: 2em;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #eee;
+    margin-bottom: 30px;
+    color: #333;
+    border-bottom: 2px solid #f0f0f0;
     padding-bottom: 10px;
 }
 
-h3 {
-    font-size: 1.5em;
-    margin: 25px 0 15px;
-}
-
-h4 {
-    font-size: 1.2em;
-    margin: 20px 0 10px;
-}
-
-p {
-    line-height: 1.6;
-    margin-bottom: 15px;
+.lead {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #444;
 }
 
 .row {
     display: flex;
-    margin: 0 -10px;
+    margin: 0 -15px;
 }
 
 .main-content {
-    flex: 70%;
-    padding: 0 10px;
-}
-
-.side-content {
-    flex: 30%;
-    padding: 0 10px;
+    flex: 1;
+    padding: 0 15px;
 }
 
 .challenges-box {
     background-color: #f8f9fa;
-    border-left: 3px solid #007bff;
-    padding: 15px;
-    margin: 20px 0;
+    border-left: 4px solid #007bff;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 0 4px 4px 0;
 }
 
-.card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+h3 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #2c3e50;
 }
 
-.card-body {
-    padding: 15px;
+h4 {
+    font-size: 1.2em;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #34495e;
 }
 
-.challenge-list, .topics-list, .attendees-list {
-    list-style-position: outside;
+.topics-list, .attendees-list {
     padding-left: 20px;
 }
 
-.challenge-list li, .topics-list li, .attendees-list li {
-    margin-bottom: 8px;
+.topics-list li, .attendees-list li {
+    margin-bottom: 10px;
 }
 
-.lead {
-    font-size: 1.2em;
+.topics-list {
+    counter-reset: item;
+}
+.topics-list li {
+    display: block;
+}
+.topics-list li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
     font-weight: bold;
-    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.relevance-section, .attendees-section {
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .main-content {
+        margin-bottom: 30px;
+    }
 }
 </style>
 	
