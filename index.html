@@ -1,3 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-VAST: ICCV 2025 Workshop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css ">
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding-top: 80px;
+        }
+
+        /* 导航栏防遮挡 */
+        section::before {
+            display: block;
+            content: " ";
+            margin-top: -80px;
+            height: 80px;
+            visibility: hidden;
+        }
+
+        /* 专业表格样式 */
+        .workshop-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 25px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .workshop-table th {
+            background: #2c3e50;
+            color: white;
+            padding: 10px;
+            text-align: center; /* 添加此行使文字居中 */
+        }
+
+        .workshop-table td {
+            padding: 10px; /* 减少行间距 */
+            border-bottom: 1px solid #ddd;
+            text-align: center; /* 添加此行使文字居中 */
+        }
+
+        /* 人员卡片 */
+        .profile-card {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 8px;
+            background: #f8f9fa;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        /* 章节标题 */
+        .section-title {
+            color: #2c3e50;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+            margin: 40px 0 30px;
+        }
+
+        /* 添加关键信息高亮 */
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 导航栏 -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">3D-VAST 2025</a>
+        </div>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="nav navbar-nav">
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#topic">Topic</a></li>
+                <li><a href="#organizers">Organizers</a></li>
+                <li><a href="#format">Format</a></li>
+                <li><a href="#impacts">Impacts</a></li>
+                <li><a href="#related">Related Workshops</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <!-- Summary Section -->
+    <section id="summary">
+        <h2 class="section-title">1. Summary</h2>
+        <table class="workshop-table">
+            <tr>
+                <th>Workshop Title</th>
+                <td>From street to space: <span class="highlight">3D V</span>ision <span class="highlight">A</span>cross<span class="highlight">S</span> aI<span class="highlight">T</span>itudes</td>
+            </tr>
+            <tr>
+                <th>Acronym</th>
+                <td>3D-VAST</td>
+            </tr>
+            <tr>
+                <th>Edition</th>
+                <td>1st</td>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <td>September 29, 2025 (Half-day)</td>
+            </tr>
+            <tr>
+                <th>Keywords</th>
+                <td>Cross-altitude data fusion, aerial images, 3D scene modeling</td>
+            </tr>
+            <tr>
+                <th>Primary Contact</th>
+                <td>Yujiao Shi &lt;<a href="mailto:shiyj2@shanghaitech.edu.cn">shiyj2@shanghaitech.edu.cn</a>&gt;</td>
+            </tr>
+            <tr>
+                <th>Anticipated Audience</th>
+                <td>100 - 300 participants</td>
+            </tr>
+            <tr>
+                <th>Poster Boards Available</th>
+                <td>Around 15</td>
+            </tr>
+            <tr>
+                <th>Proceedings</th>
+                <td>Papers will be published</td>
+            </tr>
+        </table>
+    </section>
 <div class="container">
     <!-- 添加标题 -->
     <h1 style="text-align: center; font-size: 2.5rem; margin: 40px 0; color: #2c3e50;">
