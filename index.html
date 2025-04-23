@@ -477,33 +477,120 @@
         
     </section>
 
-    <!-- Format Section -->
-    <section id="format">
-        <h2 class="section-title">4. Format & Logistics</h2>
-        
-        <h4>Schedule</h4>
-        <table class="workshop-table">
-            <tr>
-                <th>Time</th>
-                <th>Session</th>
-            </tr>
-            <tr>
-                <td>08:30-08:35</td>
-                <td>Opening Remarks</td>
-            </tr>
-            <tr>
-                <td>08:35-09:05</td>
-                <td>Keynote Speech 1</td>
-            </tr>
-            <!-- 完整日程 -->
-        </table>
+       <!-- Schedule Section -->
+    <section id="schedule">
+        <h2 class="section-title">Workshop Schedule</h2>
+    
+        <div class="schedule-table">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th style="width: 25%">Time</th>
+                        <th>Session</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Morning Sessions -->
+                    <tr class="active">
+                        <td colspan="2"><strong>Morning Sessions</strong></td>
+                    </tr>
+                
+                    <tr>
+                        <td>08:30 - 08:35</td>
+                        <td>
+                            <h4>Workshop Kickoff</h4>
+                            <p>Opening comments by organizers</p>
+                        </td>
+                    </tr>
 
-        <h4>Paper Submission</h4>
-        <ul>
-            <li>Submission Deadline: May 20, 2024</li>
-            <li>Notification: June 20, 2024</li>
-            <li>Camera Ready: July 20, 2024</li>
-        </ul>
+                    <tr>
+                        <td>08:35 - 09:05</td>
+                        <td>
+                            <h4>Keynote Speech I</h4>
+                            <p class="text-muted">Speaker to be announced</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>09:05 - 09:35</td>
+                        <td>
+                            <h4>Keynote Speech II</h4>
+                            <p class="text-muted">Speaker to be announced</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>09:35 - 10:05</td>
+                        <td>
+                            <h4>Keynote Speech III</h4>
+                            <p class="text-muted">Speaker to be announced</p>
+                        </td>
+                    </tr>
+
+                    <!-- Break -->
+                    <tr class="info">
+                        <td>10:05 - 11:00</td>
+                        <td>
+                            <h4>Coffee Break & Poster Session</h4>
+                            <p>Interactive discussions with presenters</p>
+                        </td>
+                    </tr>
+
+                    <!-- Afternoon Sessions -->
+                    <tr class="active">
+                        <td colspan="2"><strong>Afternoon Sessions</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>11:00 - 11:30</td>
+                        <td>
+                            <h4>Keynote Speech IV</h4>
+                            <p class="text-muted">Speaker to be announced</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>11:30 - 12:00</td>
+                        <td>
+                            <h4>Keynote Speech V</h4>
+                            <p class="text-muted">Speaker to be announced</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <style>
+            .schedule-table {
+                margin: 30px 0;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            }
+        
+            .schedule-table th {
+                background: #2c3e50;
+                color: white;
+                font-size: 16px;
+            }
+        
+            .schedule-table tr.active td {
+                background-color: #f8f9fa;
+                font-weight: bold;
+                color: #3498db;
+            }
+        
+            .schedule-table tr.info td {
+                background-color: #e8f4fd;
+            }
+        
+            .schedule-table h4 {
+                color: #34495e;
+                margin-top: 0;
+            }
+        
+            .schedule-table .text-muted {
+                font-size: 0.9em;
+            }
+        </style>
     </section>
 
     <!-- Impacts Section -->
