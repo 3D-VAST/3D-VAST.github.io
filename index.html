@@ -4,68 +4,175 @@
     <meta charset="UTF-8">
     <title>3D-VAST: ICCV 2025 Workshop Proposal</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 1000px; margin: 20px auto; padding: 0 20px; }
-        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; }
-        h2 { color: #34495e; margin-top: 30px; }
-        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-        th { background-color: #f8f9fa; }
-        ul { padding-left: 20px; }
-        .keyword { color: #e74c3c; font-weight: bold; }
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            max-width: 1200px; 
+            margin: 40px auto; 
+            padding: 0 30px; 
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 { 
+            color: #2c3e50; 
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 4px solid #3498db;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 25px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+        ul { 
+            padding-left: 30px;
+            margin: 15px 0;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .highlight {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+        .section-block {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <h1>3D-VAST: From Street to Space – 3D Vision Across Altitudes</h1>
-    
-    <!-- Summary Section -->
-    <h2>1. Summary</h2>
-    <table>
-        <tr><th>Workshop title</th><td>From street to space: <strong>3D Vision AcrossS aI<u>T</u>itudes</strong></td></tr>
-        <tr><th>Acronym</th><td>3D-VAST</td></tr>
-        <tr><th>Edition</th><td>1st</td></tr>
-        <tr><th>Keywords</th><td><span class="keyword">Cross-altitude data fusion</span>, aerial images, 3D scene modeling</td></tr>
-        <tr><th>Primary contact</th><td>Yujiao Shi, shiyj2@shanghaitech.edu.cn</td></tr>
-        <tr><th>Duration</th><td>Half day</td></tr>
-        <tr><th>Anticipated audience</th><td>100-300</td></tr>
-    </table>
 
-    <!-- Topic Section -->
-    <h2>2. Topic</h2>
-    <p>
-        As large-scale 3D scene modeling becomes increasingly important for applications such as urban planning, robotics, and autonomous navigation...
-    </p>
-    <h3>Key Topics:</h3>
-    <ul>
-        <li>Cross-altitude feature matching and registration</li>
-        <li>View synthesis from sparse data sources</li>
-        <li>Sparse-view 3D reconstruction</li>
-        <li>Generative approaches for view completion</li>
-    </ul>
+    <!-- 1. Summary Section -->
+    <div class="section-block">
+        <h2>1. Summary</h2>
+        <table>
+            <tr><th>Workshop title</th><td>From street to space: <span class="highlight">3D Vision AcrossS aI<span style="text-decoration: underline">T</span>itudes</span></td></tr>
+            <tr><th>Acronym</th><td>3D-VAST</td></tr>
+            <tr><th>Edition</th><td>1st</td></tr>
+            <tr><th>Keywords</th><td>Cross-altitude data fusion, aerial images, 3D scene modeling</td></tr>
+            <tr><th>Primary contact</th><td>Yujiao Shi, shiyj2@shanghaitech.edu.cn</td></tr>
+            <tr><th>Duration</th><td>Half day</td></tr>
+            <tr><th>Anticipated audience</th><td>100-300 participants</td></tr>
+            <tr><th>Poster boards</th><td>Around 15</td></tr>
+            <tr><th>Proceedings</th><td>Yes</td></tr>
+        </table>
+    </div>
 
-    <!-- Organizers Section -->
-    <h2>3. Organizers</h2>
-    <table>
-        <tr><th>Name</th><th>Affiliation</th></tr>
-        <tr><td>Yujiao Shi</td><td>ShanghaiTech University</td></tr>
-        <tr><td>Yuanbo Xiangli</td><td>Cornell University</td></tr>
-        <tr><td>Zuzana Kukelova</td><td>Czech Technical University</td></tr>
-        <!-- Add all organizers -->
-    </table>
+    <!-- 2. Topic Section -->
+    <div class="section-block">
+        <h2>2. Topic</h2>
+        <p>As large-scale 3D scene modeling becomes increasingly important for applications such as urban planning, robotics, autonomous navigation, and virtual simulations...</p>
+        
+        <h3>Technical Challenges</h3>
+        <ul>
+            <li>Sparse and incomplete views</li>
+            <li>Visual ambiguities across altitudes</li>
+            <li>Spatio-temporal inconsistencies</li>
+            <li>Dynamic scene changes</li>
+        </ul>
 
-    <!-- Logistics Section -->
-    <h2>4. Format and Logistics</h2>
-    <h3>Tentative Schedule:</h3>
-    <ul>
-        <li>08:30 - Opening Comments</li>
-        <li>08:35 - Keynote Speeches</li>
-        <li>10:05 - Coffee Break & Posters</li>
-    </ul>
+        <h3>Workshop Topics</h3>
+        <ol>
+            <li>Cross-altitude feature matching and registration</li>
+            <li>View synthesis from sparse/heterogeneous data</li>
+            <li>Sparse-view 3D reconstruction</li>
+            <li>Generative approaches for view completion</li>
+            <li>Datasets and benchmarks</li>
+            <li>Real-world applications in urban planning</li>
+        </ol>
+    </div>
 
-    <!-- Additional Sections -->
-    <!-- Add sections 5-6 following the same structure -->
+    <!-- 3. Organizers Section -->
+    <div class="section-block">
+        <h2>3. Organizers</h2>
+        <table>
+            <tr><th>Name</th><th>Title</th><th>Affiliation</th></tr>
+            <tr><td>Yujiao Shi</td><td>Assistant Professor</td><td>ShanghaiTech University</td></tr>
+            <tr><td>Yuanbo Xiangli</td><td>Postdoctoral Researcher</td><td>Cornell University</td></tr>
+            <tr><td>Zuzana Kukelova</td><td>Assistant Professor</td><td>Czech Technical University</td></tr>
+            <!-- 完整组织者列表 -->
+        </table>
 
-    <footer style="margin-top: 50px; color: #7f8c8d;">
-        <p>Proposal for ICCV 2025 Workshop. Last updated: July 2024.</p>
+        <h3>Invited Speakers</h3>
+        <table>
+            <tr><th>Name</th><th>Affiliation</th><th>Expertise</th></tr>
+            <tr><td>Torsten Sattler</td><td>CTU Prague</td><td>3D reconstruction & visual localization</td></tr>
+            <tr><td>Angela Dai</td><td>Technical University of Munich</td><td>3D scene understanding</td></tr>
+            <!-- 完整演讲者列表 -->
+        </table>
+    </div>
+
+    <!-- 4. Format & Logistics -->
+    <div class="section-block">
+        <h2>4. Format and Logistics</h2>
+        <h3>Tentative Schedule</h3>
+        <table>
+            <tr><th>Time</th><th>Activity</th></tr>
+            <tr><td>08:30-08:35</td><td>Opening Comments</td></tr>
+            <tr><td>08:35-09:05</td><td>Keynote Speech 1</td></tr>
+            <!-- 完整日程 -->
+        </table>
+
+        <h3>Paper Submission</h3>
+        <ul>
+            <li>Submission Deadline: May 20, 2024</li>
+            <li>Notification: June 20, 2024</li>
+            <li>Camera Ready: July 20, 2024</li>
+        </ul>
+    </div>
+
+    <!-- 5. Broader Impacts -->
+    <div class="section-block">
+        <h2>5. Broader Impacts</h2>
+        <p>This workshop will drive advancements in 3D scene understanding through multi-altitude data fusion...</p>
+        
+        <h3>Ethical Considerations</h3>
+        <ul>
+            <li>Privacy and data security challenges</li>
+            <li>Algorithmic bias prevention</li>
+            <li>Surveillance misuse prevention</li>
+        </ul>
+    </div>
+
+    <!-- 6. Previous Workshops -->
+    <div class="section-block">
+        <h2>6. Related Workshops</h2>
+        <table>
+            <tr><th>Workshop</th><th>Comparison</th></tr>
+            <tr><td>EarthVision (CVPR)</td><td>Focuses only on satellite imagery</td></tr>
+            <tr><td>ECCV 2024 Workshop</td><td>Emphasizes large-scale generation</td></tr>
+        </table>
+    </div>
+
+    <footer>
+        <p>ICCV 2025 Workshop Proposal • Last updated: July 2024</p>
+        <p>Contact: shiyj2@shanghaitech.edu.cn</p>
     </footer>
 </body>
 </html>
