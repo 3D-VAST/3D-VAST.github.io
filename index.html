@@ -122,29 +122,166 @@
         </table>
     </section>
 
-    <!-- Topic Section -->
+        <!-- Topic Section -->
     <section id="topic">
         <h2 class="section-title">2. Topic</h2>
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <h4>Core Challenges</h4>
-                <ul>
-                    <li>Sparse and incomplete views</li>
-                    <li>Visual ambiguities across altitudes</li>
-                    <li>Spatio-temporal inconsistencies</li>
-                    <li>Dynamic scene changes</li>
-                </ul>
 
-                <h4>Research Directions</h4>
-                <ol>
-                    <li>Cross-altitude feature matching</li>
-                    <li>View synthesis from heterogeneous data</li>
-                    <li>Sparse-view 3D reconstruction</li>
-                    <li>Generative view completion</li>
-                </ol>
+        <div class="panel panel-primary">
+            <div class="panel-body">
+                <!-- 背景介绍 -->
+                <div class="subsection">
+                    <h3>Background & Motivation</h3>
+                    <p>As large-scale 3D scene modeling becomes increasingly important for applications such as urban planning, robotics, autonomous navigation, and virtual simulations, the need for diverse, high-quality visual data is greater than ever. However:</p>
+                    <ul>
+                        <li>Ground-level imagery faces practical limitations in accessibility and scalability</li>
+                        <li>Aerial/satellite data lacks fine-grained details despite broad coverage</li>
+                    </ul>
+                    <p>The integration of multi-altitude data (ground, aerial, satellite) emerges as a promising solution for comprehensive 3D reconstruction.</p>
+                </div>
+
+                <!-- 核心问题 -->
+                <div class="subsection" style="margin-top:30px;">
+                    <h3>Core Challenges</h3>
+                    <div class="challenge-list">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Sparse and incomplete views</li>
+                                    <li>Visual ambiguities across altitudes</li>
+                                    <li>Spatio-temporal inconsistencies</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Image quality variations</li>
+                                    <li>Dynamic scene changes</li>
+                                    <li>Environmental topology alterations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Traditional methods struggle with heterogeneous multi-altitude data, necessitating novel approaches in:</p>
+                    <ul>
+                        <li>Multi-scale feature alignment</li>
+                        <li>Neural scene representations</li>
+                        <li>Robust cross-view fusion</li>
+                    </ul>
+                </div>
+
+                <!-- 研究主题 -->
+                <div class="subsection" style="margin-top:30px;">
+                    <h3>Research Topics</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ol start="1">
+                                <li>Cross-altitude feature matching and registration</li>
+                                <li>View synthesis from sparse/heterogeneous data</li>
+                                <li>Sparse-view 3D reconstruction (known/unknown poses)</li>
+                            </ol>
+                        </div>
+                        <div class="col-md-6">
+                            <ol start="4">
+                                <li>Generative approaches for view completion</li>
+                                <li>Datasets & benchmarks for cross-altitude systems</li>
+                                <li>Applications in urban planning/digital twins</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 社区关联 -->
+                <div class="subsection" style="margin-top:30px;">
+                    <h3>Community Relevance</h3>
+                    <p>This workshop addresses fundamental challenges in:</p>
+                    <ul>
+                        <li>3D scene modeling across scales</li>
+                        <li>Multi-source data fusion</li>
+                        <li>Robust multi-view geometry</li>
+                    </ul>
+                    <p>Key technical focuses include:</p>
+                    <ul>
+                        <li>Cross-altitude feature matching</li>
+                        <li>Neural scene representation learning</li>
+                        <li>Real-time reconstruction from heterogeneous data</li>
+                    </ul>
+                </div>
+
+                <!-- 目标受众 -->
+                <div class="subsection" style="margin-top:30px;">
+                    <h3>Target Audience</h3>
+                    <div class="audience-categories">
+                        <div class="category">
+                            <h4>Computer Vision Researchers</h4>
+                            <ul>
+                                <li>3D reconstruction specialists</li>
+                                <li>Multi-view geometry experts</li>
+                                <li>Data fusion researchers</li>
+                            </ul>
+                        </div>
+                    
+                        <div class="category">
+                            <h4>Application Domain Experts</h4>
+                            <ul>
+                                <li>Robotics & autonomous navigation</li>
+                                <li>Urban planning professionals</li>
+                                <li>Digital twin developers</li>
+                            </ul>
+                        </div>
+                    
+                        <div class="category">
+                            <h4>ML Practitioners</h4>
+                            <ul>
+                                <li>Neural scene representation researchers</li>
+                                <li>Cross-view alignment specialists</li>
+                                <li>Generative 3D modeling experts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <style>
+    .subsection {
+        margin-bottom: 30px;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 4px;
+    }
+
+    .subsection h3 {
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 8px;
+        margin-bottom: 15px;
+    }
+
+    .challenge-list ul {
+        column-count: 2;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+    }
+
+    .audience-categories .category {
+        margin-bottom: 20px;
+        padding: 15px;
+        border-left: 3px solid #3498db;
+    }
+
+    .category h4 {
+        color: #34495e;
+        margin-top: 0;
+    }
+
+    @media (max-width: 768px) {
+        .challenge-list ul {
+            column-count: 1;
+            -webkit-column-count: 1;
+            -moz-column-count: 1;
+        }
+    }
+    </style>
 
     <!-- Organizers Section -->
     <section id="organizers">
